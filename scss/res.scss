@@ -1,0 +1,8 @@
+@import "mixins.scss";
+
+@media screen and (max-width: 768px) {
+    #game-bg {
+        @include w-h(100%,100%);
+        top: 0;
+    }
+}

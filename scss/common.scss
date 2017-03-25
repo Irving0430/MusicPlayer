@@ -1,0 +1,47 @@
+// *,h1,p {
+//     margin: 0;
+//     padding: 0;
+//     border: 0;
+//     outline: 0;
+// }
+
+// html, body {
+//     height: 100%;
+//     font-family: "Microsoft Yahei", sans-serif;
+//     -webkit-font-smoothing: antialiased;
+// }
+
+// button {
+//     border: none;
+//     outline: none;
+// }
+
+// // a {
+// // 	text-decoration-line: none;
+
+// // }
+
+*, h1, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Microsoft Yahei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    &:hover, &:link, &:visited, &:active {
+        text-decoration: none;
+    }
+}

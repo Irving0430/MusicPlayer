@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MusicPlayer</title>
+    <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/res.css">
+</head>
+<body>
+    <div class="body-wrap">
+        <!--背景图片-->
+        <div class="bg-wrap"></div>
+        <!--歌词界面-->
+        <div class="content">
+            <audio autoplay='' src="musics/李健 - 抚仙湖.mp3"></audio>
+            <div class="music-info">
+                <p class="music-name">抚仙湖抚抚仙湖</p>
+                <p class="music-author">李建</p>
+                <p class="music-type">华语</p>
+            </div>
+            <!--分享收藏点赞-->
+            <div class="music-ico">
+                <a class="glyphicon glyphicon-share" 
+                    href="http://service.weibo.com/share/share.php?title=#_loginLayer_1466697157538" 
+                    target="new">
+                </a>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-heart-empty"></span>
+            </div>
+        </div>
+        <!-- 进度条 -->
+        <span class="basebar">
+            <span class="progressbar"></span>
+        </span>
+        <!-- 控制区域 -->
+        <div class="pannel">
+            <!-- 播放换频道下一曲 -->
+            <div class="music-control">
+                <span class="m-icon m-play"></span>
+                <span class="m-icon m-change"></span>
+                <span class="m-icon m-next"></span>
+            </div>
+            <!-- 评论 -->
+            <div class="music-remark">
+                <span class="4"></span>
+                <span class="5"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

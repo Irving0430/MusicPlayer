@@ -1,0 +1,19 @@
+/* code block */
+// define attributes of width and height
+@mixin w-h($width: auto, $height: auto) {
+    width: $width;
+    height: $height;
+}
+// fixed position
+@mixin position($type, $vertical, $v1, $horizon, $v2) {
+    position: $type;
+    #{$vertical}: $v1;
+    #{$horizon}: $v2;
+}
+// add prefix in order to  solve issues of the browser compatibility
+@mixin prefix($type, $val1) {
+    #{$type}: #{$val1};
+    @each $v in $vendors {
+        #{"-" + $v + "-" + $type}: #{$val1};
+    }
+}
